@@ -1,0 +1,13 @@
+{
+    "properties": {
+        "name": "foo",
+        "environment": {
+            "type": "noflo-browser"
+        }
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {},
+    "connections": []
+}
