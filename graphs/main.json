@@ -9,45 +9,26 @@
     "outports": {},
     "groups": [],
     "processes": {
-        "core/Repeat_u05q9": {
-            "component": "core/Repeat",
+        "noflo1/foo2": {
+            "component": "noflo1/foo2",
             "metadata": {
-                "label": "core/Repeat",
-                "x": 334,
-                "y": 100,
+                "label": "foo2",
+                "x": 288,
+                "y": 108,
                 "width": 72,
                 "height": 72
             }
         },
-        "prompts/Alert_ag8r5": {
+        "prompts/Alert_q0aza": {
             "component": "prompts/Alert",
             "metadata": {
                 "label": "prompts/Alert",
-                "x": 540,
+                "x": 468,
                 "y": 108,
                 "width": 72,
                 "height": 72
             }
         }
     },
-    "connections": [
-        {
-            "src": {
-                "process": "core/Repeat_u05q9",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "prompts/Alert_ag8r5",
-                "port": "in"
-            },
-            "metadata": {}
-        },
-        {
-            "data": "hello world",
-            "tgt": {
-                "process": "core/Repeat_u05q9",
-                "port": "in"
-            }
-        }
-    ]
+    "connections": []
 }

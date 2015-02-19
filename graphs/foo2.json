@@ -1,0 +1,53 @@
+{
+    "properties": {
+        "name": "foo2",
+        "environment": {
+            "type": "all"
+        }
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "noflo1/fefwef": {
+            "component": "noflo1/fefwef",
+            "metadata": {
+                "label": "fefwef",
+                "x": 324,
+                "y": 108,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Repeat_pli0f": {
+            "component": "core/Repeat",
+            "metadata": {
+                "label": "core/Repeat",
+                "x": 180,
+                "y": 108,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "core/Repeat_pli0f",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "noflo1/fefwef",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "data": "hello world",
+            "tgt": {
+                "process": "core/Repeat_pli0f",
+                "port": "in"
+            }
+        }
+    ]
+}
